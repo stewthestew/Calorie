@@ -20,7 +20,7 @@ Add Calorie to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-calorie = "0.1.0"
+calorie = { git = "https://github.com/stewthestew/calorie.rs.git" }
 ```
 
 ---
