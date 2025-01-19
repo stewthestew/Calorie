@@ -95,38 +95,38 @@ pub mod color {
         }
 
         /// ANSI escape code to reset background color to default.
-        pub const RESET: &str = "\x1b[49m";
+        pub const BG_RESET: &str = "\x1b[49m";
         /// ANSI escape code for black background.
-        pub const BLACK: &str = "\x1b[40m";
+        pub const BG_BLACK: &str = "\x1b[40m";
         /// ANSI escape code for red background.
-        pub const RED: &str = "\x1b[41m";
+        pub const BG_RED: &str = "\x1b[41m";
         /// ANSI escape code for green background.
-        pub const GREEN: &str = "\x1b[42m";
+        pub const BG_GREEN: &str = "\x1b[42m";
         /// ANSI escape code for yellow background.
-        pub const YELLOW: &str = "\x1b[43m";
+        pub const BG_YELLOW: &str = "\x1b[43m";
         /// ANSI escape code for blue background.
-        pub const BLUE: &str = "\x1b[44m";
+        pub const BG_BLUE: &str = "\x1b[44m";
         /// ANSI escape code for magenta background.
-        pub const MAGENTA: &str = "\x1b[45m";
+        pub const BG_MAGENTA: &str = "\x1b[45m";
         /// ANSI escape code for cyan background.
-        pub const CYAN: &str = "\x1b[46m";
+        pub const BG_CYAN: &str = "\x1b[46m";
         /// ANSI escape code for white background.
-        pub const WHITE: &str = "\x1b[47m";
+        pub const BG_WHITE: &str = "\x1b[47m";
         /// ANSI escape code for bright black background.
-        pub const BRIGHT_BLACK: &str = "\x1b[100m";
+        pub const BG_BRIGHT_BLACK: &str = "\x1b[100m";
         /// ANSI escape code for bright red background.
-        pub const BRIGHT_RED: &str = "\x1b[101m";
+        pub const BG_BRIGHT_RED: &str = "\x1b[101m";
         /// ANSI escape code for bright green background.
-        pub const BRIGHT_GREEN: &str = "\x1b[102m";
+        pub const BG_BRIGHT_GREEN: &str = "\x1b[102m";
         /// ANSI escape code for bright yellow background.
-        pub const BRIGHT_YELLOW: &str = "\x1b[103m";
+        pub const BG_BRIGHT_YELLOW: &str = "\x1b[103m";
         /// ANSI escape code for bright blue background.
-        pub const BRIGHT_BLUE: &str = "\x1b[104m";
+        pub const BG_BRIGHT_BLUE: &str = "\x1b[104m";
         /// ANSI escape code for bright magenta background.
-        pub const BRIGHT_MAGENTA: &str = "\x1b[105m";
+        pub const BG_BRIGHT_MAGENTA: &str = "\x1b[105m";
         /// ANSI escape code for bright cyan background.
-        pub const BRIGHT_CYAN: &str = "\x1b[106m";
+        pub const BG_BRIGHT_CYAN: &str = "\x1b[106m";
         /// ANSI escape code for bright white background.
-        pub const BRIGHT_WHITE: &str = "\x1b[107m";
+        pub const BG_BRIGHT_WHITE: &str = "\x1b[107m";
     }
 }
