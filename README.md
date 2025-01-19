@@ -99,6 +99,16 @@ Available colors:
 
 ---
 
+# Todo
+- [x] foreground
+- [x] background
+- [ ] bold
+- [ ] underline
+- [ ] italic
+- [ ] strikethrough
+  
+And many more in the feature
+
 ## License
 
 Calorie is licensed under the [MIT License](LICENSE).
