@@ -106,6 +106,9 @@ println!("{}This is bold text{}", modifiers::BOLD, modifiers::RESET);
 println!("{}This is italic text{}", modifiers::ITALIC, modifiers::RESET);
 println!("{}This is underlined text{}", modifiers::UNDERLINE, modifiers::RESET);
 println!("{}This is strikethrough text{}", modifiers::STRIKETHROUGH, modifiers::RESET);
+println!("{}This is hidden text{}", modifiers::HIDE_TEXT, modifiers::RESET);
+println!("{}This is strikethrough text{}", modifiers::COLOR_INVERSION, modifiers::RESET);
+
 ```
 
 ---
