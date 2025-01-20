@@ -126,3 +126,12 @@ pub mod color {
     /// ANSI escape code for bright white background.
     pub const BG_BRIGHT_WHITE: &str = "\x1b[107m";
 }
+#[test]
+fn test() {
+    use crate::color;
+    use crate::check256support;
+    let supported = check256support();
+    let color1 = color::RED;
+    let color2 = color::BG_RED;
+    println!("{supported} {color1} {color2}");
+}
