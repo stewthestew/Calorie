@@ -12,7 +12,7 @@
 - Detects terminal support for truecolor and 256-color modes.
 - Provides ANSI escape codes for text and background styling.
 - Allows custom RGB colors with truecolor.
-- Supports text modifiers: **bold**, *italic*, ~strikethrough~, and underline.
+- Supports text modifiers: **bold**, *italic*, ~strikethrough~, hidden text, color inversion, and underline.
 - Easy to use and integrate into any project.
 
 ---
