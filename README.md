@@ -1,6 +1,8 @@
+
+
 # Calorie
 
-**Calorie** is a lightweight Rust library for terminal text styling with ANSI colors. What makes Calorie special is its zero dependencies—ensuring simplicity, performance, and reliability. It supports both truecolor (24-bit) and standard 256-color modes, making it an excellent choice for terminal-based applications.
+**Calorie** is a lightweight Rust library for terminal text styling with ANSI colors and modifiers. With zero dependencies, Calorie ensures simplicity, performance, and reliability. It supports both truecolor (24-bit) and standard 256-color modes, and includes text modifiers like bold, italic, underline, and strikethrough.
 
 ---
 
@@ -10,6 +12,7 @@
 - Detects terminal support for truecolor and 256-color modes.
 - Provides ANSI escape codes for text and background styling.
 - Allows custom RGB colors with truecolor.
+- Supports text modifiers: **bold**, *italic*, ~strikethrough~, and underline.
 - Easy to use and integrate into any project.
 
 ---
@@ -50,18 +53,18 @@ Set text colors using the `color::foreground` module.
 #### Truecolor Example
 
 ```rust
-use calorie::color::foreground;
+use calorie::color;
 
-let red_text = foreground::truecolor(255, 0, 0); // Red text
-println!("{}This is red text{}", red_text, foreground::RESET);
+let red_text = truecolor(255, 0, 0); // Red text
+println!("{}This is red text{}", red_text, modifiers::RESET);
 ```
 
 #### Predefined Colors
 
 ```rust
-use calorie::color::foreground;
+use calorie::color;
 
-println!("{}This is green text{}", foreground::GREEN, foreground::RESET);
+println!("{}This is green text{}", GREEN, modifiers::RESET);
 ```
 
 Available colors:
@@ -78,10 +81,10 @@ Set background colors using the `color::background` module.
 #### Truecolor Example
 
 ```rust
-use calorie::color::background;
+use calorie::color;
 
-let green_background = background::truecolor(0, 255, 0); // Green background
-println!("{}This is green background{}", green_background, background::RESET);
+let green_background = color::bg_truecolor(0, 255, 0); // Green background
+println!("{}This is green background{}", green_background, modifiers::RESET);
 ```
 
 #### Predefined Colors
@@ -89,25 +92,34 @@ println!("{}This is green background{}", green_background, background::RESET);
 ```rust
 use calorie::color::background;
 
-println!("{}This is yellow background{}", background::YELLOW, background::RESET);
+println!("{}This is yellow background{}", color::BG_YELLOW, modifiers::RESET);
 ```
 
-Available colors:
+### Modifiers
 
-- Standard: `BLACK`, `RED`, `GREEN`, `YELLOW`, `BLUE`, `MAGENTA`, `CYAN`, `WHITE`
-- Bright: `BRIGHT_BLACK`, `BRIGHT_RED`, `BRIGHT_GREEN`, `BRIGHT_YELLOW`, `BRIGHT_BLUE`, `BRIGHT_MAGENTA`, `BRIGHT_CYAN`, `BRIGHT_WHITE`
+Apply text modifiers like bold, italic, underline, and strikethrough.
+
+```rust
+use calorie::modifiers;
+
+println!("{}This is bold text{}", modifiers::BOLD, modifiers::RESET);
+println!("{}This is italic text{}", modifiers::ITALIC, modifiers::RESET);
+println!("{}This is underlined text{}", modifiers::UNDERLINE, modifiers::RESET);
+println!("{}This is strikethrough text{}", modifiers::STRIKETHROUGH, modifiers::RESET);
+```
 
 ---
 
 # Todo
+
 - [x] foreground
 - [x] background
-- [ ] bold
-- [ ] underline
-- [ ] italic
-- [ ] strikethrough
-  
-And many more in the feature
+- [x] bold
+- [x] underline
+- [x] italic
+- [x] strikethrough
+
+And many more features coming soon!
 
 ## License
 
