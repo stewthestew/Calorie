@@ -1,4 +1,6 @@
 use std::env;
+pub mod background;
+pub mod foreground;
 #[allow(unused)]
 /// Checks if the terminal supports true color (24-bit color) or 256-color mode.
 /// Returns `true` if the terminal supports true color or 256 colors, otherwise `false`.
