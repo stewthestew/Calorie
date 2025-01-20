@@ -7,8 +7,8 @@ use std::env;
 ///
 /// # Example
 /// ```rust
-/// let is_supported = check256support();
-/// println!("True color supported: {}", is_supported);
+// let is_supported = check256support();
+// println!("True color supported: {}", is_supported);
 /// ```
 pub fn check256support() -> bool {
     let term = env::var("COLORTERM").unwrap_or_default();
@@ -30,8 +30,8 @@ pub mod color {
     ///
     /// # Example
     /// ```rust
-    /// let color_code = truecolor(255, 0, 0); // Red foreground
-    /// println!("This is red text: {}", color_code);
+    // let color_code = truecolor(255, 0, 0); // Red foreground
+    // println!("This is red text: {}", color_code);
     /// ```
     pub fn truecolor(r: u8, g: u8, b: u8) -> String {
         let rgb_color = format!("\x1b[38;2;{r};{g};{b}m");
@@ -83,8 +83,8 @@ pub mod color {
     ///
     /// # Example
     /// ```rust
-    /// let color_code = truecolor(0, 255, 0); // Green background
-    /// println!("This is a green background: {}", color_code);
+    // let color_code = truecolor(0, 255, 0); // Green background
+    // println!("This is a green background: {}", color_code);
     /// ```
     pub fn bg_truecolor(r: u8, g: u8, b: u8) -> String {
         let rgb_color = format!("\x1b[48;2;{r};{g};{b}m");
