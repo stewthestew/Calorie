@@ -97,7 +97,7 @@ println!("{}This is yellow background{}", color::BG_YELLOW, modifiers::RESET);
 
 ### Modifiers
 
-Apply text modifiers like bold, italic, underline, and strikethrough.
+Apply text modifiers like bold, italic, underline, strikethrough, etc.
 
 ```rust
 use calorie::modifiers;
