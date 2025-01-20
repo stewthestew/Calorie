@@ -118,7 +118,9 @@ println!("{}This is strikethrough text{}", modifiers::STRIKETHROUGH, modifiers::
 - [x] underline
 - [x] italic
 - [x] strikethrough
-- [x] color_inversion
+- [x] colorinversion
+- [x] hiding text
+
 And many more features coming soon!
 
 ## License
