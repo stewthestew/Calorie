@@ -123,6 +123,7 @@ println!("{}This is strikethrough text{}", modifiers::COLOR_INVERSION, modifiers
 - [x] strikethrough
 - [x] colorinversion
 - [x] hiding text
+- [ ] dimmed variant
 
 And many more features coming soon!
 
