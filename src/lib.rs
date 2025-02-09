@@ -99,6 +99,7 @@ pub mod modifiers {
     pub const UNDERLINE: &str = "\x1b[4m";
     pub const STRIKETHROUGH: &str = "\x1b[9m";
     pub const COLOR_INVERSION: &str = "\x1b[7m";
+    pub const DIM: &str = "\x1b[2m";
     pub const HIDE_TEXT: &str = "\x1b[8m";
 }
 #[test]
