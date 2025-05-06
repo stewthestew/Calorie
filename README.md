@@ -1,21 +1,5 @@
-
-
 # Calorie
-
-**Calorie** is a lightweight Rust library for terminal text styling with ANSI colors and modifiers. With zero dependencies, Calorie ensures simplicity, performance, and reliability. It supports both truecolor (24-bit) and standard 256-color modes, and includes text modifiers like bold, italic, underline, and strikethrough.
-
----
-
-## Features
-
-- Zero dependencies for simplicity and performance.
-- Detects terminal support for truecolor and 256-color modes.
-- Provides ANSI escape codes for text and background styling.
-- Allows custom RGB colors with truecolor.
-- Supports text modifiers: **bold**, *italic*, ~strikethrough~, hidden text, color inversion, and underline.
-- Easy to use and integrate into any project.
-
----
+Calorie is a bunch of constants for ANSI escape sequences
 
 ## Installation
 
@@ -32,15 +16,15 @@ calorie = { git = "https://github.com/stewthestew/calorie.rs.git" }
 
 ### Checking Terminal Color Support
 
-Determine if the terminal supports truecolor or 256-color:
+Check if the terminal supports truecolor not:
 
 ```rust
 use calorie::check256support;
 
 if check256support() {
-    println!("Your terminal supports truecolor or 256-color mode.");
+    println!("Your terminal supports truecolor");
 } else {
-    println!("Limited color support detected.");
+    println!("Your termianl doesn't support truecolor");
 }
 ```
 
@@ -56,7 +40,7 @@ Set text colors using the `color::foreground` module.
 use calorie::color;
 
 let red_text = truecolor(255, 0, 0); // Red text
-println!("{}This is red text{}", red_text, modifiers::RESET);
+println!("{}This is red{}", red_text, modifiers::RESET);
 ```
 
 #### Predefined Colors
@@ -124,15 +108,3 @@ println!("{}This is strikethrough text{}", modifiers::COLOR_INVERSION, modifiers
 - [x] colorinversion
 - [x] hiding text
 - [ ] dimmed variant
-
-And many more features coming soon!
-
-## License
-
-Calorie is licensed under the [MIT License](LICENSE).
-
----
-
-*README and documentation were written by ChatGPT.*
-
-And it might have lied just a little bit...
